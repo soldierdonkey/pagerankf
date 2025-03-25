@@ -175,6 +175,8 @@ class Web {
         this.get_control_y = () => {
             return this._control_y
         }
+        this.control_x(10)
+        this.control_y(10)
         this.control_tab.addEventListener("mousemove", event => {
             if (is_mouse_down) {
                 this.control_x(event.clientX - 50)
